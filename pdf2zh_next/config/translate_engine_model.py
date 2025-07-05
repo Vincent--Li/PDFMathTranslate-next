@@ -529,11 +529,11 @@ GUI_SENSITIVE_FIELDS.append("openai_compatible_base_url")
 
 # 所有翻译引擎
 TRANSLATION_ENGINE_SETTING_TYPE: TypeAlias = (
-    OpenAISettings
+    DeepSeekSettings
+    | OpenAISettings
     | GoogleSettings
     | BingSettings
     | DeepLSettings
-    | DeepSeekSettings
     | OllamaSettings
     | XinferenceSettings
     | AzureOpenAISettings

@@ -209,7 +209,7 @@ except Exception as e:
     disable_sensitive_input = False
 
 # Define default values
-default_lang_from = rev_lang_map.get(settings.translation.lang_in, "English")
+default_lang_from = rev_lang_map.get(settings.translation.lang_in, "Simplified Chinese")
 
 default_lang_to = settings.translation.lang_out
 for display_name, code in lang_map.items():
@@ -1512,7 +1512,7 @@ def setup_gui(
     share: bool = False,
     auth_file: str | None = None,
     welcome_page: str | None = None,
-    server_port=7860,
+    server_port=38443,
     inbrowser: bool = True,
 ) -> None:
     """
